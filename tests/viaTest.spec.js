@@ -1,5 +1,4 @@
 const {test, expect, devices,request}=require('@playwright/test');
-const { copyFileSync } = require('fs');
 const credentials=JSON.parse(JSON.stringify(require('./Data/taskData.json')));
 test('login test',async ({browser})=>{
         const context=await browser.newContext();
